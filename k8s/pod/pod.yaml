@@ -1,0 +1,11 @@
+
+apiVersion: v1          # simple key value
+kind: Pod               # simple key value 
+metadata:               # Dictionary
+  name: nginx-pod
+spec:                   # Dictionary & List
+  containers:
+  - name: c1
+    image: nginx
+    ports:
+    - containerPort: 80
